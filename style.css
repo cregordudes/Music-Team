@@ -1,0 +1,46 @@
+:root {
+  --blue: #150485;
+  --red: #fe346e;
+  --yellow: #ffe459;
+  --green: #03c4a1;
+}
+body {
+  background-color: var(--red);
+}
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-3,
+.last {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  width: 150px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.card:active {
+  background-color: var(--yellow);
+  box-shadow: 0 5px var(--green);
+  transform: translateY(-4px);
+  transition: all 0.1s ease;
+}
+
+.active {
+  background-color: var(--yellow);
+  box-shadow: 0 5px var(--green);
+  transform: translateY(-4px);
+  transition: all 0.1s ease;
+}
